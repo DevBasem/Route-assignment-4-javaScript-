@@ -1,0 +1,133 @@
+/* |=============================================| General |=============================================| */
+:root
+{
+  --main-font: 'PT Sans', sans-serif;
+  --sec-font: 'Poppins', serif;
+  --text-color: #EEEEEE;
+  --accent-color: #00ADB5;
+}
+
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
+/* ~~~~~~~~~~~~~~~~ Reusable Custom Classes ~~~~~~~~~~~~~~~~ */
+.main-font
+{
+  font-family: var(--main-font);
+}
+
+.sec-font
+{
+  font-family: var(--sec-font);
+}
+
+.text-color
+{
+  color: var(--text-color);
+}
+
+.accent-color
+{
+  color: var(--accent-color);
+}
+
+.grid-center
+{
+  display: grid;
+  place-items: center;
+}
+
+.flex-center
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between
+{
+  justify-content: space-between;
+}
+
+.w-100
+{
+  width: 100vw;
+}
+
+.w-full
+{
+  width: 100%;
+}
+
+.h-100svh
+{
+  min-height: 100svh;
+}
+
+.w-95
+{
+  max-width: 95% !important;
+}
+
+.layer-bg
+{
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.overflow-y
+{
+  overflow-y: hidden;
+}
+
+body
+{
+  overflow-x: hidden;
+}
+/* |=============================================| Gallery Section |==========================================| */
+.gallery img
+{
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+.gallery img:hover
+{
+  transform: scale(1.05);
+}
+/* |=============================================| Modal Design |=============================================| */
+.img-box
+{
+  height: 85vh;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img-box img
+{
+  height: 100%;
+  object-fit: contain;
+}
+
+.modal-btns
+{
+  position: absolute;
+  bottom: 0.5rem;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.modal-btn
+{
+  cursor: pointer;
+}

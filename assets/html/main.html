@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- |=============================================| Page Title |===========================================| -->
+    <title></title>
+    <!-- |=============================================| Fonts |================================================| -->
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <!-- |=============================================| Tailwind |=============================================| -->
+    <script src="../css/tailwind.min"></script>
+    <!-- |=============================================| Tailwind Config |======================================| -->
+    <script src="../js/tailwind.config.js"></script>
+    <!-- |=============================================| Flowbite CSS |=========================================| -->
+    <link rel="stylesheet" href="../css/flowbite.min.css" />
+    <!-- |=============================================| Font Awesome |=========================================| -->
+    <link rel="stylesheet" href="../icons/css/all.min.css" />
+    <!-- |=============================================| Main CSS |=============================================| -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="mainBody">
+    <!-- |=============================================| Main Page |============================================| -->
+    <!-- ~~~~~~~~~~ NavBar ~~~~~~~~~~ -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img class="w-8 h-8 mr-2" src="../imgs/logo/logo.svg" alt="logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">NovaBite</span>
+        </a>
+        <div class="flex items-center space-x-6 rtl:space-x-reverse">
+          <a href="../../index.html" class="text-sm text-blue-600 dark:text-blue-500 hover:underline">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <!-- ~~~~~~~~~~ Introduction Section ~~~~~~~~~~ -->
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Welcome <span class="username" id="userName"></span></h1>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">This is a simple website to showcase and view some products photos</p>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~ Products Gallery ~~~~~~~~~~ -->
+    <section class="bg-white dark:bg-gray-900">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mx-auto max-w-screen-xl p-4">
+        <div class="gallery grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="img-view hidden fixed h-screen w-full top-0 layer-bg flex-center flex-col" id="productModal">
+        <div class="img-box rounded-lg" id="imgBox">
+          <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="" />
+          <div class="modal-btns rounded-lg shadow">
+            <div class="prev-btn modal-btn px-2" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="close-btn modal-btn px-2" id="closeBtn"><i class="fa-solid fa-xmark"></i></div>
+            <div class="next-btn modal-btn px-2" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- |=============================================| Flowbite JS |==========================================| -->
+    <script src="../js/flowbite.min.js"></script>
+    <!-- |=============================================| Main JS |==============================================| -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
